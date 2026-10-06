@@ -13,7 +13,7 @@ import { formatDateTime, getGreeting, formatTimeAgo } from '@/utils/format';
 interface NavItem {
   label: string;
   path: string;
-  icon: React.ComponentType<{ className?: string }>;
+  icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>;
   permission?: PermissionName;
   roles?: RoleName[];
 }
@@ -27,7 +27,7 @@ const navItems: NavItem[] = [
   { label: 'Inventory', path: '/inventory', icon: Boxes, permission: 'inventory.view' },
   { label: 'Purchasing', path: '/purchasing', icon: Truck, permission: 'purchases.view' },
   { label: 'Suppliers', path: '/suppliers', icon: Building2, permission: 'suppliers.view' },
-  { label: 'Customers', path: '/customers' },
+  { label: 'Customers', path: '/customers', icon: Users },
   { label: 'Payments', path: '/payments', icon: CreditCard, permission: 'payments.view' },
   { label: 'Cashier Shifts', path: '/shifts', icon: Clock, permission: 'shifts.open' },
   { label: 'Expenses', path: '/expenses', icon: Receipt, permission: 'expenses.create' },

@@ -7,6 +7,10 @@ import {
   LogIn, LogOut, ShoppingCart, CreditCard, Package,
   Building2, Clock, Receipt, Users as UsersIcon, Settings,
 } from 'lucide-react';
+
+const ITEMS_PER_PAGE = 25;
+
+const actionIcons: Record<string, React.ComponentType<{ className?: string }>> = {
   LOGIN: LogIn, LOGOUT: LogOut, SALE_CREATED: ShoppingCart,
   PAYMENT_CONFIRMED: CreditCard, PAYMENT_FAILED: CreditCard,
   PAYMENT_INITIATED: CreditCard, REFUND_CREATED: Receipt,

@@ -6,8 +6,8 @@ import type { PaymentInitiateInput } from '@/services/interfaces';
 // =====================
 
 export interface IPaymentProvider {
-  initiatePayment(input: PaymentInitiateInput): PaymentAttempt;
-  checkPaymentStatus(attemptId: string): PaymentStatus;
+  initiatePayment(input: PaymentInitiateInput): PaymentAttempt | Promise<PaymentAttempt>;
+  checkPaymentStatus(attemptId: string): PaymentStatus | Promise<PaymentStatus>;
   name: string;
 }
 
