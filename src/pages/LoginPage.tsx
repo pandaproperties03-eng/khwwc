@@ -91,8 +91,13 @@ export function LoginPage() {
           </div>
         </div>
 
-        <div className="relative z-10 text-slate-500 text-sm">
-          &copy; 2026 Kirinyaga Healthcare Workers Cafeteria. All rights reserved.
+        <div className="relative z-10">
+          <p className="text-slate-500 text-sm">
+            &copy; 2026 Kirinyaga Healthcare Workers Cafeteria. All rights reserved.
+          </p>
+          <p className="text-slate-600 text-sm font-medium mt-1">
+            Powered by <span className="text-orange-500 font-semibold">PandaTechs Softwares</span>
+          </p>
         </div>
       </div>
 
@@ -193,6 +198,10 @@ export function LoginPage() {
             </div>
           </div>
         </div>
+
+        <p className="text-center text-sm text-slate-400 mt-8">
+          Powered by <span className="font-semibold text-slate-600">PandaTechs Softwares</span>
+        </p>
       </div>
     </div>
   );
